@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codecademy: Company Flexbox</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="header">
-      <logo>
+      <logo class="logo">
         <img src="img/company_logo.png" />
       </logo>
       <nav>
@@ -18,24 +19,21 @@
         <h3><a href="#company">Our Team</a></h3>
       </nav>
     </div>
-    <mission class="mission" id="mission">
-      <div class="mission-banner">
-        <h1>Company Mission</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta,
-          doloribus dolorum laboriosam corrupti, quae quos pariatur sed eum
-          cumque deleniti iusto? Dolores, libero! Dignissimos vel aliquid
-          veritatis dolore consequatur!
-        </p>
-      </div>
-    </mission>
-    <products class="products" id="products">
-      <h1>Products</h1>
-    </products>
-    <company class="company" id="company">
-      <h1>Our Team</h1>
-    </company>
-    <footer>
+    <main class="main">
+      <mission class="mission" id="mission">
+        <div class="mission-banner">
+          <h1>Company Mission</h1>
+          <p>We at The Pokemon Company have one mission: To Catch 'Em All!</p>
+        </div>
+      </mission>
+      <products class="products" id="products">
+        <h1>Products</h1>
+      </products>
+      <company class="company" id="company">
+        <h1>Our Team</h1>
+      </company>
+    </main>
+    <footer class="footer">
       <p>Lorem ipsum dolor sit amet.</p>
     </footer>
   </body>
