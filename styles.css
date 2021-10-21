@@ -20,12 +20,23 @@ body {
   background-attachment: fixed;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+
 h1 {
   font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -34,7 +45,7 @@ h3 {
 }
 
 p {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 a {
@@ -55,43 +66,134 @@ a:hover {
 .logo {
   display: block;
   margin: 2rem auto 0 auto;
+  text-align: center;
 }
 
 .logo img {
-  max-width: 400px;
+  max-width: 50%;
+  height: auto;
 }
 
-nav {
+.nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem;
 }
 
-nav h3 a {
+.nav h3 {
+  margin: 0.75rem;
+}
+
+.nav h3 a {
   text-transform: uppercase;
   color: #fff;
-}
-
-.main {
 }
 
 .mission {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* Parallax Background */
   background-image: url('img/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
+  background-attachment: fixed;
+  min-height: 500px;
 }
 
 .mission-banner {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem 0 1rem 0;
+}
+
+.mission-banner h1,
+.mission-banner p {
+  margin: 1rem;
+  line-height: 2rem;
 }
 
 .mission-banner p {
   font-size: 1.5rem;
+}
+
+.products {
+  display: block;
+  padding: 1rem;
+}
+
+.product-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  border: 1px solid #fff;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.product-box img {
+  max-width: 50%;
+  max-height: 50%;
+  align-self: center;
+}
+
+.company {
+  display: block;
+}
+
+.company h1 {
+  margin: 0;
+  padding: 1rem;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('img/lab.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team-member {
+  margin: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  width: 200px;
+  background-color: #fff;
+}
+
+.team-member img {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  height: 200px;
+  background-color: #fff;
+  align-self: center;
+}
+
+.team-member h3 {
+  margin: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin: 3rem;
+  color: #f1f1f1;
+  padding: 1rem;
 }
